@@ -1,0 +1,8 @@
+#summary Roadmate - A web application for organising and managing car pooling.
+
+= Introduction =
+
+RoadMate is a web application designed to support users in managing and organising car pooling.
+
+Roadmate is *currently under development*.
+
