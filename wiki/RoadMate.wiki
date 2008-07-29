@@ -5,3 +5,5 @@
 RoadMate is a web application designed to support users in managing and organising car pooling.
 
 Roadmate is *currently under development*.
+
+http://www.mwcog.org/commuter2/images/spotlight%20pics/carpool_sign_500.jpg
