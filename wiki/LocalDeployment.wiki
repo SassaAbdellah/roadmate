@@ -1,4 +1,4 @@
-#summary A guide to running RoadMate on a local server.
+#summary A guide to running RoadMate on a local machine.
 #labels Phase-Deploy
 
 == Step 1: Install Google App Engine ==
