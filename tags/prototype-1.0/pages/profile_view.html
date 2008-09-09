@@ -1,0 +1,59 @@
+{% extends "templates/base.html" %}
+
+{% block title%}My Profile{% endblock %}
+
+{% block main %}
+	<h2>my profile</h2>
+	<h3>{{ target_user.first_name }} {{ target_user.last_name }}</h3>
+	
+	<p>
+		<code>
+						
+			<strong>Email:</strong> {{ target_user.user.email }}
+
+			{% if target_user.town.name %}
+				<br />
+				<strong>Hometown:</strong> {{ target_user.town.name }}
+			{% endif %}
+			
+			{% if target_user.phone %}
+				<br />
+				<strong>Phone:</strong> {{ target_user.phone }}
+			{% endif %}
+			
+		</code>
+	</p>
+	
+	{% ifequal target_user current_user %}
+		<p class="post-footer">	
+			<a href= "/profile?user={{ target_user.key.id }}&edit=True">Edit</a> 	
+		</p>
+	{% endifequal %}
+
+
+	{% if rides %}
+		<h2>my rides</h2>
+
+		<table>
+			<tr>
+				<th>Ride</th>
+				<th>Date</th>
+				<th>Seats</th>
+				{% ifequal target_user current_user %}
+				<th></th> <!-- Edit link column -->
+				{% endifequal %}
+			</tr>
+			{% for ride in rides %}
+				<tr class="row-a">
+					<td><a href="/rideoffer?id={{ ride.key.id }}">{{ ride.source.name }} - {{ ride.destination.name }}</a></td>
+					<td>{{ ride.date }}</td>
+					<td>{{ ride.available_seats }}</td>
+					{% ifequal ride.owner current_user %}
+						<td><a href="/rideoffer_edit?id={{ ride.key.id }}">Edit</a> </td>
+					{% endifequal %}
+				</tr>
+			{% endfor %}
+		</table>
+	{% endif %}
+	
+{% endblock %}
