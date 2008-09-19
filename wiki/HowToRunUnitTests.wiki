@@ -11,27 +11,27 @@
 5.      Run selenium remote control server.
 
  Example for windows :  
-After unzip selenium-remote-control-1.0-beta-1-dist.zip, you will get selenium-remote-control-1.0-beta-1 folder . (see step 3)
+*After unzip selenium-remote-control-1.0-beta-1-dist.zip, you will get selenium-remote-control-1.0-beta-1 folder . (see step 3)
 
-I assume that your selenium-remote-control-1.0-beta-1 folder located at d:\ selenium-remote-control-1.0-beta-1.
+*I assume that your selenium-remote-control-1.0-beta-1 folder located at d:\ selenium-remote-control-1.0-beta-1.
         
-Start-->Run--->type cmd        
-d:
-cd  d:\selenium-remote-control-1.0-beta-1\selenium-server-1.0-beta-1
+*Start-->Run--->type cmd        
+*d:
+*cd  d:\selenium-remote-control-1.0-beta-1\selenium-server-1.0-beta-1
 java -jar selenium-server.jar -port 5555
 
-if you see following lines from you console , your selenium romote control server is running now.
+*if you see following lines from you console , your selenium romote control server is running now.
 
-23:11:58.125 INFO - Java: Sun Microsystems Inc. 10.0-b19
-23:11:58.125 INFO - OS: Windows XP 5.1 x86
-23:11:58.125 INFO - v1.0-beta-1 [2201], with Core v1.0-beta-1 [1994]
-23:11:58.265 INFO - Version Jetty/5.1.x
-23:11:58.265 INFO - Started HttpContext[/selenium-server/driver,/selenium-server
+*23:11:58.125 INFO - Java: Sun Microsystems Inc. 10.0-b19
+*23:11:58.125 INFO - OS: Windows XP 5.1 x86
+*23:11:58.125 INFO - v1.0-beta-1 [2201], with Core v1.0-beta-1 [1994]
+*23:11:58.265 INFO - Version Jetty/5.1.x
+*23:11:58.265 INFO - Started HttpContext[/selenium-server/driver,/selenium-server
 /driver]
-23:11:58.265 INFO - Started HttpContext[/selenium-server,/selenium-server]
-23:11:58.265 INFO - Started HttpContext[/,/]
-23:11:58.375 INFO - Started SocketListener on 0.0.0.0:5555
-23:11:58.390 INFO - Started org.mortbay.jetty.Server@32c41a
+*23:11:58.265 INFO - Started HttpContext[/selenium-server,/selenium-server]
+*23:11:58.265 INFO - Started HttpContext[/,/]
+*23:11:58.375 INFO - Started SocketListener on 0.0.0.0:5555
+*23:11:58.390 INFO - Started org.mortbay.jetty.Server@32c41a
 
 
 
