@@ -26,7 +26,7 @@
 == HowTo: Run Unit Tests ==
   # Setup your google app engine at port 8080 (http://localhost:8080/).
   # Run roadmate web application from localhost  eg: dev_appserver.py ./roadmate
-  # Run selenium remote control server.
+  # Run selenium server.
   # Check out tests folder from google code repository /trunk/roadmate/tests.    
   # cd d:\tests  (Assuming your checkout tests folder is located at your computer d:\tests.)
   # Now you can run your unit test cases. eg: python test_rideoffer.py
