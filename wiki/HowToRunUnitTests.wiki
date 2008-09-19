@@ -2,21 +2,21 @@
 
 == HowTo: Setup Selenium Server ==
 
-1.	Download selenium-remote-control-1.0-beta-1-dist.zip file from http://archiva.openqa.org/repository/releases/org/openqa/selenium/selenium-remote-control/1.0-beta-1/
+#Download selenium-remote-control-1.0-beta-1-dist.zip file from http://archiva.openqa.org/repository/releases/org/openqa/selenium/selenium-remote-control/1.0-beta-1/
 
-2.	Unzip this file. You will get selenium-remote-control-1.0-beta-1 folder.
+#Unzip this file. You will get selenium-remote-control-1.0-beta-1 folder.
 
-3.	Install JDK1.5 or higher. See how to setup java path http://www.ics.uci.edu/~thornton/ics22/LabManual/SettingUpJava.html .
+#Install JDK1.5 or higher. See how to setup java path http://www.ics.uci.edu/~thornton/ics22/LabManual/SettingUpJava.html .
 
-4.      I assume that your selenium-remote-control-1.0-beta-1 folder located at d:\ selenium-remote-control-1.0-beta-1.(see step 2)
+#I assume that your selenium-remote-control-1.0-beta-1 folder located at d:\ selenium-remote-control-1.0-beta-1.(see step 2)
         
-5.      Start-->Run--->type cmd 
+#Start-->Run--->type cmd 
        
-6.       cd  d:\selenium-remote-control-1.0-beta-1\selenium-server-1.0-beta-1
+#cd  d:\selenium-remote-control-1.0-beta-1\selenium-server-1.0-beta-1
 
-7.      java -jar selenium-server.jar -port 5555
+#java -jar selenium-server.jar -port 5555
 
-if you see following lines from you console , your selenium romote control server is running now.
+#if you see following lines from you console , your selenium romote control server is running now.
 23:11:58.125 INFO - Java: Sun Microsystems Inc. 10.0-b19
 23:11:58.125 INFO - OS: Windows XP 5.1 x86
 23:11:58.125 INFO - v1.0-beta-1 [2201], with Core v1.0-beta-1 [1994]
@@ -32,17 +32,10 @@ if you see following lines from you console , your selenium romote control serve
 
 
 == HowTo: Run Unit Tests ==
-·	 Setup your google app engine at port 8080 (http://localhost:8080/).
- 
-·	 Run roadmate web application from localhost  eg: dev_appserver.py ./roadmate
-
-·	 Run selenium remote control server.
-
-·	Check out tests folder from google code repository /trunk/roadmate/tests.    
-
-        
-·	cd d:\tests  (Assuming your checkout tests folder is located at your computer d:\tests.)
-
-·	Now you can run your unit test cases. eg: python test_rideoffer.py
-
-·	From console window , you will be able to see test results.
+#Setup your google app engine at port 8080 (http://localhost:8080/).
+#Run roadmate web application from localhost  eg: dev_appserver.py ./roadmate
+#Run selenium remote control server.
+#Check out tests folder from google code repository /trunk/roadmate/tests.    
+#cd d:\tests  (Assuming your checkout tests folder is located at your computer d:\tests.)
+#Now you can run your unit test cases. eg: python test_rideoffer.py
+#From console window , you will be able to see test results.
