@@ -23,11 +23,26 @@
 
 
 
-== HowTo: Run Unit Tests ==
+== HowTo: Run Unit Tests At Local Host==
   # Setup your google app engine at port 8080 (http://localhost:8080/).
   # Run roadmate web application from localhost  eg: dev_appserver.py ./roadmate
   # Run selenium server.
   # Check out tests folder from google code repository /trunk/roadmate/tests.    
   # cd d:\tests  (Assuming your checkout tests folder is located at your computer d:\tests.)
+  # Now you can run your unit test cases. eg: python test_rideoffer.py
+  # From console window , you will be able to see test results.
+
+
+== HowTo: Run Unit Tests At Massey Host==
+
+  # Run selenium server.
+  # Check out tests folder from google code repository /trunk/roadmate/tests.    
+  # cd d:\tests  (Assuming your checkout tests folder is located at your computer d:\tests.)
+  # Modify your test case python file. Change "http://localhost:8080/ to "http://seat-web3.massey.ac.nz:8080/" eg: edit test_rideoffer.py code :
+{{{ 
+def setUp(self):
+        #change "http://localhost:8080/" to "http://seat-web3.massey.ac.nz:8080/"
+        self.selenium = selenium("localhost", 5555, "*iexplore","http://localhost:8080/")
+}}}
   # Now you can run your unit test cases. eg: python test_rideoffer.py
   # From console window , you will be able to see test results.
