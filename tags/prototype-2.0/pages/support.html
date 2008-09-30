@@ -1,0 +1,65 @@
+{% extends "templates/base.html" %}
+
+{% block title%}Support{% endblock %}
+
+{% block main %}
+
+<h2>log in and register</h2>
+<p>
+	We require an OpenID for logging in. OpenID is an easy way to use a single identity across the Internet. Find out more about 
+   	how to get an <a href="http://openid.net/"> OpenID</a>.
+</p>
+
+<h2>request ride</h2>
+<p>
+	View the most recent rides on the <a href="/">Home</a> page or <a href="/browse">Browse rides</a>
+	and once you found a ride offer that suites you click on the request link next to it to request a seat on that ride.
+</p>
+
+<h2>offer ride</h2>
+<p>
+   Use your OpenID to log in. Select <a href="/rideoffer_create">Offer Ride</a> from Sidebar Menu and submit your offer ride form.
+</p>
+
+<h2>browse rides </h2>
+<p>
+	<a href="/browse">Browse rides</a> allows users to search available rides by specifying source and destination.
+</p>
+
+<h2>profile</h2>
+<p>
+	<a href="/profile">My profile</a> allows users to view and edit their personal details and also view and edit their rides.
+</p>
+
+<p><h1>Support contact:</h1></p>
+
+<p>
+
+<table width="512" border="0">
+  <tr>
+    <td colspan="3">Technical Support:</td>
+  </tr>
+  <tr>
+    <td width="113">&nbsp;</td>
+    <td width="131">Name:</td>
+    <td width="246">XXXX</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Phone:</td>
+    <td>06 XXXXXXXX</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Email:</td>
+    <td><a href="mailto:roadmate@rd.com">roadmate@rd.com</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+
+{% endblock %}
